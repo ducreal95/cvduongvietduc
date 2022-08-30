@@ -1,0 +1,195 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 1122.5px;
+    width: 795.7px;
+    max-width: 100%;
+    border: 3px solid rgb(214, 222, 213);
+    box-sizing: border-box;
+    box-shadow: 
+    0 0 0 2px rgb(192, 191, 191),
+    0 0 0 6px rgb(102, 102, 102);
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.name{
+    display: flex;
+    height: 190px;
+    width: 770px;
+    max-width: 100%;
+    box-shadow: 1px 3px 1px rgb(157, 157, 255);
+    border-radius: 60px;
+    flex-direction: row;
+    align-items: center;
+    background-image: -webkit-linear-gradient(-60deg, rgb(157, 157, 255) 5%, rgb(157, 157, 255) 0%,  white 50%, rgb(157, 157, 255) 100%);
+    margin: 5px auto;
+    justify-content: space-evenly;
+    
+}
+.main-info div{
+    display: flex;
+    justify-content: start;
+}
+.main-info div .fa-solid{
+    align-self: center;
+    margin-right: 15px;
+}
+.skill-pro, .perskill{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.skill-pro ul:last-child, .perskill ul:last-child{
+    padding-right: 20px;
+}
+cite{
+    padding-left: 60px;
+}
+.name h3{
+    color: rgb(84, 82, 82);
+    padding: 0;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+}
+hgroup{
+    padding-right: 100px;
+    text-align: left;
+}
+.name>img{
+    display: flex;
+    justify-items: flex-end;
+    width: 150px;
+    height: 150px;
+    clip-path: circle(50% at 50% 50%);
+}
+.main{
+    display: flex;
+}
+.main-info{
+    display: flex;
+}
+.main-info ul:first-child{
+    align-self:auto;
+    margin-right: 15px;
+    justify-content: space-between;
+}
+.main-info ul:first-child li{
+    padding: 2px 0 13px 0;
+}
+.main-info ul:first-child li:nth-of-type(3){
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+.main-info ul:first-child li:nth-of-type(4){
+    padding-top: 7px;
+}
+
+.main-info ul:last-child li{
+    padding: 3px 0;
+}
+.fa-solid{
+    font-size: 18px;
+}
+.main-skill{
+    border: 1px solid rgb(239, 241, 214);
+    flex-basis: 40%;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 5px 10px 10px;
+    background-image: -webkit-linear-gradient(-80deg, rgb(239, 241, 214) 25%, rgb(239, 241, 214) 0%,  white 50%, rgb(239, 241, 214) 80%);
+}
+.main-skill-info ul, .skill-pro div:last-child ul, .perskill div:last-child ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-exp-cpn li{
+    margin-left: 30px;
+}
+ul{
+    list-style: disc;
+}
+.main-exp{
+    flex-basis: 60%;
+    height: auto;
+    border: 1px solid rgb(239, 241, 214);
+    border-radius: 50px;
+    margin: 10px 10px 10px 5px;
+    background-image: -webkit-linear-gradient(-80deg, rgb(239, 241, 214) 25%, rgb(239, 241, 214) 0%,  white 50%, rgb(239, 241, 214) 80%);
+    text-align: justify;
+}
+
+.main-skill, .main-exp{
+    padding: 19px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    padding: 10px 0;
+    color: red;
+    text-shadow: 1px 2px 1px  brown;
+}
+h3{
+    padding: 18px;
+    text-align: center;
+    color: brown;
+    font-size: 22px;
+}
+.main-exp-lam{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.main-exp-time{
+    padding-right: 5px;
+}
+.main-exp-cpn{
+    padding-left: 10px;
+}
+@media screen and (max-width: 800px) {
+    body{
+        width: 390px;
+        max-width: 93%;
+        height: auto;
+    }
+    .name{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 95%;
+    }
+    .name hgroup{
+        padding: 0;
+        text-align: center;
+    }
+    .name hgroup>h3{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-skill{
+        flex-basis: 100%;
+    }
+    aside, article{
+        margin: 10px !important;
+        border-radius: 10px !important;
+    }
+    progress{
+        width: 7rem;
+        max-width: 100%;
+    }
+    .skill-pro div:last-child li{
+        justify-items: nd;
+    }
+}
